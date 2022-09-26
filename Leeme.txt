@@ -1,0 +1,8 @@
+﻿1.- El controlador que muestra la vista de inicio es: HomeController y la vista se llama: Index
+    la vista esta en: Views\Home\Index.cshtml
+    la declaración de las librerias js que usamos y hojas de estilo estan en el archivo:
+    Views\Shared\_LayoutPrincipal.cshtml
+2.- El código de javascrip esta en el archivo: wwwroot\js\site.js
+3.- Se implemento swagger (ver: https://swagger.io/) para documentar la api. Ver: http://localhost:5008/swagger/index.html
+    ver clase: Program.cs y regiones "Swagger"
+4.- Revisar el controlador AlbumsController que devuelve los datos.

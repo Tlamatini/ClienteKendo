@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Ejercicios programación";
+}
+<script type="text/x-kendo-template" id="templateAlbums">
+    <div class="album">
+        <img src="images/disc-vinyl-icon.png" alt="discovinil">
+        <h4>#:albumId#</h4>
+        <p>#:title#</p>
+        <button id="btnBoton#:albumId#" data-role="button" data-icon="edit" data-bind="events: { click: clickBtnAlbum }">Probar click</button>
+    </div>
+</script>
+<script type="text/x-kendo-template" id="templateAlbums2">
+    <div class="col" style="float:left;">
+    <div class="card" style="width:150px;">
+        <img class="card-img-top" src="images/disc-vinyl-icon.png" alt="discovinil" style="width:100px;">
+        <div class="card-body">
+            <h4 class="card-title">title</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    </div>
+</script>
+<div id="homeIndex">
+    <div class="text-center">
+        <h1 class="display-4">Ejercicios</h1>
+        <p>de programación</p>
+        <br />
+        <br />
+        <br />
+        <button id="btnBoton1" data-role="button" data-icon="edit" data-bind="events: { click: clickBtnBoton1 }">Probar click</button>
+        <br />
+        <br />
+    </div>
+    <div class="text-center">
+        <h1>Listview mvvm</h1>
+        <h2>Lista de albums</h2>
+    </div>
+    <div class="row">
+       <div id="listaAlbums" class="row" data-role="listview" data-template="templateAlbums" data-bind="source: dsAlbums"></div>
+    </div>
+</div>
